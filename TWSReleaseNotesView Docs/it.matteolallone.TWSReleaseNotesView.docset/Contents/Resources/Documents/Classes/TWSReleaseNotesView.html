@@ -1,0 +1,1562 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>TWSReleaseNotesView Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.0.5 (build 789)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">TWSReleaseNotesView </a></h1>
+				<a id="developerHome" href="../index.html">Matteo Lallone</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">TWSReleaseNotesView Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/closeButtonColor">&nbsp;&nbsp;&nbsp;&nbsp;closeButtonColor</option>
+	
+	<option value="//api/name/closeButtonFont">&nbsp;&nbsp;&nbsp;&nbsp;closeButtonFont</option>
+	
+	<option value="//api/name/closeButtonShadowColor">&nbsp;&nbsp;&nbsp;&nbsp;closeButtonShadowColor</option>
+	
+	<option value="//api/name/closeButtonShadowOffset">&nbsp;&nbsp;&nbsp;&nbsp;closeButtonShadowOffset</option>
+	
+	<option value="//api/name/darkSeparatorColor">&nbsp;&nbsp;&nbsp;&nbsp;darkSeparatorColor</option>
+	
+	<option value="//api/name/lightSeparatorColor">&nbsp;&nbsp;&nbsp;&nbsp;lightSeparatorColor</option>
+	
+	<option value="//api/name/overlayAlpha">&nbsp;&nbsp;&nbsp;&nbsp;overlayAlpha</option>
+	
+	<option value="//api/name/releaseNotesColor">&nbsp;&nbsp;&nbsp;&nbsp;releaseNotesColor</option>
+	
+	<option value="//api/name/releaseNotesFont">&nbsp;&nbsp;&nbsp;&nbsp;releaseNotesFont</option>
+	
+	<option value="//api/name/releaseNotesShadowColor">&nbsp;&nbsp;&nbsp;&nbsp;releaseNotesShadowColor</option>
+	
+	<option value="//api/name/releaseNotesShadowOffset">&nbsp;&nbsp;&nbsp;&nbsp;releaseNotesShadowOffset</option>
+	
+	<option value="//api/name/textViewAlpha">&nbsp;&nbsp;&nbsp;&nbsp;textViewAlpha</option>
+	
+	<option value="//api/name/textViewBackgroundColor">&nbsp;&nbsp;&nbsp;&nbsp;textViewBackgroundColor</option>
+	
+	<option value="//api/name/titleColor">&nbsp;&nbsp;&nbsp;&nbsp;titleColor</option>
+	
+	<option value="//api/name/titleFont">&nbsp;&nbsp;&nbsp;&nbsp;titleFont</option>
+	
+	<option value="//api/name/titleShadowColor">&nbsp;&nbsp;&nbsp;&nbsp;titleShadowColor</option>
+	
+	<option value="//api/name/titleShadowOffset">&nbsp;&nbsp;&nbsp;&nbsp;titleShadowOffset</option>
+	
+	<option value="//api/name/viewShadowColor">&nbsp;&nbsp;&nbsp;&nbsp;viewShadowColor</option>
+	
+	<option value="//api/name/viewShadowOffset">&nbsp;&nbsp;&nbsp;&nbsp;viewShadowOffset</option>
+	
+	<option value="//api/name/viewShadowOpacity">&nbsp;&nbsp;&nbsp;&nbsp;viewShadowOpacity</option>
+	
+	<option value="//api/name/viewShadowRadius">&nbsp;&nbsp;&nbsp;&nbsp;viewShadowRadius</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/isAppVersionUpdated">&nbsp;&nbsp;&nbsp;&nbsp;+ isAppVersionUpdated</option>
+	
+	<option value="//api/name/setupViewWithAppIdentifier:releaseNotesTitle:closeButtonTitle:completionBlock:">&nbsp;&nbsp;&nbsp;&nbsp;+ setupViewWithAppIdentifier:releaseNotesTitle:closeButtonTitle:completionBlock:</option>
+	
+	<option value="//api/name/viewWithReleaseNotesTitle:text:closeButtonTitle:">&nbsp;&nbsp;&nbsp;&nbsp;+ viewWithReleaseNotesTitle:text:closeButtonTitle:</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/showInView:">&nbsp;&nbsp;&nbsp;&nbsp;- showInView:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Setting main properties">Setting main properties</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Creating the release notes view">Creating the release notes view</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Checking the app version">Checking the app version</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Showing the release notes view">Showing the release notes view</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/closeButtonColor">closeButtonColor</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/closeButtonFont">closeButtonFont</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/closeButtonShadowColor">closeButtonShadowColor</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/closeButtonShadowOffset">closeButtonShadowOffset</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/darkSeparatorColor">darkSeparatorColor</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/lightSeparatorColor">lightSeparatorColor</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/overlayAlpha">overlayAlpha</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/releaseNotesColor">releaseNotesColor</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/releaseNotesFont">releaseNotesFont</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/releaseNotesShadowColor">releaseNotesShadowColor</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/releaseNotesShadowOffset">releaseNotesShadowOffset</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/textViewAlpha">textViewAlpha</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/textViewBackgroundColor">textViewBackgroundColor</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/titleColor">titleColor</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/titleFont">titleFont</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/titleShadowColor">titleShadowColor</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/titleShadowOffset">titleShadowOffset</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/viewShadowColor">viewShadowColor</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/viewShadowOffset">viewShadowOffset</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/viewShadowOpacity">viewShadowOpacity</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/viewShadowRadius">viewShadowRadius</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isAppVersionUpdated">isAppVersionUpdated</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setupViewWithAppIdentifier:releaseNotesTitle:closeButtonTitle:completionBlock:">setupViewWithAppIdentifier:releaseNotesTitle:closeButtonTitle:completionBlock:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/viewWithReleaseNotesTitle:text:closeButtonTitle:">viewWithReleaseNotesTitle:text:closeButtonTitle:</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/showInView:">showInView:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="TWSReleaseNotesView Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">TWSReleaseNotesView Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">UIView</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">TWSReleaseNotesView.h<br />TWSReleaseNotesView.m</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Use the <code>TWSReleaseNotesView</code> class to display a custom release notes view, to be shown when the app is opened for the first time after an update.</p>
+
+<p>In order to check if the release notes view must be shown, the <a href="#//api/name/isAppVersionUpdated">isAppVersionUpdated</a> can be used. This method will check a previously stored app version string. If the stored app version string does not exist or does not match the current version string, it will return <code>YES</code>, storing the current version string.</p>
+
+<p>The release notes view can be initialized using the <a href="#//api/name/viewWithReleaseNotesTitle:text:closeButtonTitle:">viewWithReleaseNotesTitle:text:closeButtonTitle:</a> class method, if the release notes text is set directly when calling the method. If the release notes must be retrieved from the App Store, you must use the <a href="#//api/name/setupViewWithAppIdentifier:releaseNotesTitle:closeButtonTitle:completionBlock:">setupViewWithAppIdentifier:releaseNotesTitle:closeButtonTitle:completionBlock:</a> class method.</p>
+
+<p>The appearance of the view can be customized using its alpha, color and font properties, to be set before showing the release notes view with the <a href="#//api/name/showInView:">showInView:</a> instance method.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Setting main properties" name="task_Setting main properties"></a>
+						<h3 class="subsubtitle task-title">Setting main properties</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/overlayAlpha">&nbsp;&nbsp;overlayAlpha</a></code>
+		<span class="tooltip"><p>The alpha value for the overlay to be applied to the container view. Default is <code>0.5f</code>.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/textViewAlpha">&nbsp;&nbsp;textViewAlpha</a></code>
+		<span class="tooltip"><p>The alpha value for the background color to be applied to the text container view. Default is <code>0.8f</code>.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/textViewBackgroundColor">&nbsp;&nbsp;textViewBackgroundColor</a></code>
+		<span class="tooltip"><p>The background color to be applied to the text container view. Default is <code>[UIColor blackColor]</code>.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/darkSeparatorColor">&nbsp;&nbsp;darkSeparatorColor</a></code>
+		<span class="tooltip"><p>The dark separator color. Default is <code>[UIColor colorWithRed:16.0f/255.0f green:16.0f/255.0f blue:16.0f/255.0f alpha:1.0]</code>.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/lightSeparatorColor">&nbsp;&nbsp;lightSeparatorColor</a></code>
+		<span class="tooltip"><p>The light separator color. Default is <code>[UIColor colorWithRed:58.0f/255.0f green:58.0f/255.0f blue:65.0f/255.0f alpha:1.0]</code>.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/viewShadowColor">&nbsp;&nbsp;viewShadowColor</a></code>
+		<span class="tooltip"><p>The shadow color for the release notes view. Default is <code>[UIColor blackColor]</code>.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/viewShadowOffset">&nbsp;&nbsp;viewShadowOffset</a></code>
+		<span class="tooltip"><p>The shadow offset for the release notes view. Default is <code>(0.0f, 3.0f)</code>.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/viewShadowRadius">&nbsp;&nbsp;viewShadowRadius</a></code>
+		<span class="tooltip"><p>The shadow radius for the release notes view. Default is <code>3.0f</code>.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/viewShadowOpacity">&nbsp;&nbsp;viewShadowOpacity</a></code>
+		<span class="tooltip"><p>The shadow opacity for the release notes view. Default is <code>1.0f</code>.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/titleFont">&nbsp;&nbsp;titleFont</a></code>
+		<span class="tooltip"><p>The font for the title label. Default is <code>[UIFont systemFontOfSize:16.0f]</code>.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/titleColor">&nbsp;&nbsp;titleColor</a></code>
+		<span class="tooltip"><p>The color for the title label. Default is <code>[UIColor whiteColor]</code>.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/titleShadowColor">&nbsp;&nbsp;titleShadowColor</a></code>
+		<span class="tooltip"><p>The shadow color for the title label. Default is <code>[UIColor blackColor]</code>.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/titleShadowOffset">&nbsp;&nbsp;titleShadowOffset</a></code>
+		<span class="tooltip"><p>The shadow offset for the title label. Default is <code>(0.0f, -1.0f)</code>.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/releaseNotesFont">&nbsp;&nbsp;releaseNotesFont</a></code>
+		<span class="tooltip"><p>The font for the release notes text view. Default is <code>[UIFont systemFontOfSize:14.0f]</code>.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/releaseNotesColor">&nbsp;&nbsp;releaseNotesColor</a></code>
+		<span class="tooltip"><p>The color for the release notes text view. Default is <code>[UIColor whiteColor]</code>.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/releaseNotesShadowColor">&nbsp;&nbsp;releaseNotesShadowColor</a></code>
+		<span class="tooltip"><p>The shadow color for the release notes text view. Default is <code>[UIColor blackColor]</code>.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/releaseNotesShadowOffset">&nbsp;&nbsp;releaseNotesShadowOffset</a></code>
+		<span class="tooltip"><p>The shadow offset for the release notes text view. Default is <code>(0.0f, -1.0f)</code>.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/closeButtonFont">&nbsp;&nbsp;closeButtonFont</a></code>
+		<span class="tooltip"><p>The font for the close button. Default is <code>[UIFont systemFontOfSize:16.0f]</code>.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/closeButtonColor">&nbsp;&nbsp;closeButtonColor</a></code>
+		<span class="tooltip"><p>The color for the close button. Default is <code>[UIColor whiteColor]</code>.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/closeButtonShadowColor">&nbsp;&nbsp;closeButtonShadowColor</a></code>
+		<span class="tooltip"><p>The shadow color for the close button. Default is <code>[UIColor blackColor]</code>.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/closeButtonShadowOffset">&nbsp;&nbsp;closeButtonShadowOffset</a></code>
+		<span class="tooltip"><p>The shadow offset for the close button. Default is <code>(0.0f, -1.0f)</code>.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Creating the release notes view" name="task_Creating the release notes view"></a>
+						<h3 class="subsubtitle task-title">Creating the release notes view</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/viewWithReleaseNotesTitle:text:closeButtonTitle:">+&nbsp;viewWithReleaseNotesTitle:text:closeButtonTitle:</a></code>
+		<span class="tooltip"><p>Returns a release notes view initialized with custom parameters.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setupViewWithAppIdentifier:releaseNotesTitle:closeButtonTitle:completionBlock:">+&nbsp;setupViewWithAppIdentifier:releaseNotesTitle:closeButtonTitle:completionBlock:</a></code>
+		<span class="tooltip"><p>Creates a release notes view initialized with custom parameters and returns it in the completion block.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Checking the app version" name="task_Checking the app version"></a>
+						<h3 class="subsubtitle task-title">Checking the app version</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isAppVersionUpdated">+&nbsp;isAppVersionUpdated</a></code>
+		<span class="tooltip"><p>Checks for app update state, using the <code>CFBundleVersion</code> key in the application <code>Info.plist</code>.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Showing the release notes view" name="task_Showing the release notes view"></a>
+						<h3 class="subsubtitle task-title">Showing the release notes view</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/showInView:">&ndash;&nbsp;showInView:</a></code>
+		<span class="tooltip"><p>Shows the release notes view in the specified container view.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/closeButtonColor" title="closeButtonColor"></a>
+	<h3 class="subsubtitle method-title">closeButtonColor</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The color for the close button. Default is <code>[UIColor whiteColor]</code>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (strong, nonatomic) UIColor *closeButtonColor</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TWSReleaseNotesView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/closeButtonFont" title="closeButtonFont"></a>
+	<h3 class="subsubtitle method-title">closeButtonFont</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The font for the close button. Default is <code>[UIFont systemFontOfSize:16.0f]</code>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (strong, nonatomic) UIFont *closeButtonFont</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TWSReleaseNotesView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/closeButtonShadowColor" title="closeButtonShadowColor"></a>
+	<h3 class="subsubtitle method-title">closeButtonShadowColor</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The shadow color for the close button. Default is <code>[UIColor blackColor]</code>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (strong, nonatomic) UIColor *closeButtonShadowColor</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TWSReleaseNotesView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/closeButtonShadowOffset" title="closeButtonShadowOffset"></a>
+	<h3 class="subsubtitle method-title">closeButtonShadowOffset</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The shadow offset for the close button. Default is <code>(0.0f, -1.0f)</code>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (assign, nonatomic) CGSize closeButtonShadowOffset</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TWSReleaseNotesView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/darkSeparatorColor" title="darkSeparatorColor"></a>
+	<h3 class="subsubtitle method-title">darkSeparatorColor</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The dark separator color. Default is <code>[UIColor colorWithRed:16.0f/255.0f green:16.0f/255.0f blue:16.0f/255.0f alpha:1.0]</code>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (strong, nonatomic) UIColor *darkSeparatorColor</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TWSReleaseNotesView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/lightSeparatorColor" title="lightSeparatorColor"></a>
+	<h3 class="subsubtitle method-title">lightSeparatorColor</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The light separator color. Default is <code>[UIColor colorWithRed:58.0f/255.0f green:58.0f/255.0f blue:65.0f/255.0f alpha:1.0]</code>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (strong, nonatomic) UIColor *lightSeparatorColor</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TWSReleaseNotesView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/overlayAlpha" title="overlayAlpha"></a>
+	<h3 class="subsubtitle method-title">overlayAlpha</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The alpha value for the overlay to be applied to the container view. Default is <code>0.5f</code>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (assign, nonatomic) CGFloat overlayAlpha</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TWSReleaseNotesView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/releaseNotesColor" title="releaseNotesColor"></a>
+	<h3 class="subsubtitle method-title">releaseNotesColor</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The color for the release notes text view. Default is <code>[UIColor whiteColor]</code>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (strong, nonatomic) UIColor *releaseNotesColor</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TWSReleaseNotesView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/releaseNotesFont" title="releaseNotesFont"></a>
+	<h3 class="subsubtitle method-title">releaseNotesFont</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The font for the release notes text view. Default is <code>[UIFont systemFontOfSize:14.0f]</code>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (strong, nonatomic) UIFont *releaseNotesFont</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TWSReleaseNotesView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/releaseNotesShadowColor" title="releaseNotesShadowColor"></a>
+	<h3 class="subsubtitle method-title">releaseNotesShadowColor</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The shadow color for the release notes text view. Default is <code>[UIColor blackColor]</code>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (strong, nonatomic) UIColor *releaseNotesShadowColor</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TWSReleaseNotesView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/releaseNotesShadowOffset" title="releaseNotesShadowOffset"></a>
+	<h3 class="subsubtitle method-title">releaseNotesShadowOffset</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The shadow offset for the release notes text view. Default is <code>(0.0f, -1.0f)</code>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (assign, nonatomic) CGSize releaseNotesShadowOffset</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TWSReleaseNotesView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/textViewAlpha" title="textViewAlpha"></a>
+	<h3 class="subsubtitle method-title">textViewAlpha</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The alpha value for the background color to be applied to the text container view. Default is <code>0.8f</code>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (assign, nonatomic) CGFloat textViewAlpha</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TWSReleaseNotesView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/textViewBackgroundColor" title="textViewBackgroundColor"></a>
+	<h3 class="subsubtitle method-title">textViewBackgroundColor</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The background color to be applied to the text container view. Default is <code>[UIColor blackColor]</code>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (strong, nonatomic) UIColor *textViewBackgroundColor</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TWSReleaseNotesView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/titleColor" title="titleColor"></a>
+	<h3 class="subsubtitle method-title">titleColor</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The color for the title label. Default is <code>[UIColor whiteColor]</code>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (strong, nonatomic) UIColor *titleColor</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TWSReleaseNotesView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/titleFont" title="titleFont"></a>
+	<h3 class="subsubtitle method-title">titleFont</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The font for the title label. Default is <code>[UIFont systemFontOfSize:16.0f]</code>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (strong, nonatomic) UIFont *titleFont</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TWSReleaseNotesView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/titleShadowColor" title="titleShadowColor"></a>
+	<h3 class="subsubtitle method-title">titleShadowColor</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The shadow color for the title label. Default is <code>[UIColor blackColor]</code>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (strong, nonatomic) UIColor *titleShadowColor</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TWSReleaseNotesView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/titleShadowOffset" title="titleShadowOffset"></a>
+	<h3 class="subsubtitle method-title">titleShadowOffset</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The shadow offset for the title label. Default is <code>(0.0f, -1.0f)</code>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (assign, nonatomic) CGSize titleShadowOffset</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TWSReleaseNotesView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/viewShadowColor" title="viewShadowColor"></a>
+	<h3 class="subsubtitle method-title">viewShadowColor</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The shadow color for the release notes view. Default is <code>[UIColor blackColor]</code>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (strong, nonatomic) UIColor *viewShadowColor</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TWSReleaseNotesView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/viewShadowOffset" title="viewShadowOffset"></a>
+	<h3 class="subsubtitle method-title">viewShadowOffset</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The shadow offset for the release notes view. Default is <code>(0.0f, 3.0f)</code>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (assign, nonatomic) CGSize viewShadowOffset</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TWSReleaseNotesView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/viewShadowOpacity" title="viewShadowOpacity"></a>
+	<h3 class="subsubtitle method-title">viewShadowOpacity</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The shadow opacity for the release notes view. Default is <code>1.0f</code>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (assign, nonatomic) CGFloat viewShadowOpacity</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TWSReleaseNotesView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/viewShadowRadius" title="viewShadowRadius"></a>
+	<h3 class="subsubtitle method-title">viewShadowRadius</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The shadow radius for the release notes view. Default is <code>3.0f</code>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (assign, nonatomic) CGFloat viewShadowRadius</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TWSReleaseNotesView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/isAppVersionUpdated" title="isAppVersionUpdated"></a>
+	<h3 class="subsubtitle method-title">isAppVersionUpdated</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Checks for app update state, using the <code>CFBundleVersion</code> key in the application <code>Info.plist</code>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (BOOL)isAppVersionUpdated</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Returns <code>YES</code> if no previous app version string was stored, or if the previously stored app version string does not match the current version string, <code>NO</code> otherwise.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TWSReleaseNotesView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setupViewWithAppIdentifier:releaseNotesTitle:closeButtonTitle:completionBlock:" title="setupViewWithAppIdentifier:releaseNotesTitle:closeButtonTitle:completionBlock:"></a>
+	<h3 class="subsubtitle method-title">setupViewWithAppIdentifier:releaseNotesTitle:closeButtonTitle:completionBlock:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates a release notes view initialized with custom parameters and returns it in the completion block.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)setupViewWithAppIdentifier:(NSString *)<em>appIdentifier</em> releaseNotesTitle:(NSString *)<em>releaseNotesTitle</em> closeButtonTitle:(NSString *)<em>closeButtonTitle</em> completionBlock:(void ( ^ ) ( TWSReleaseNotesView *releaseView , NSString *releaseNoteText , NSError *error ))<em>completionBlock</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>appIdentifier</em></dt>
+			<dd><p>The App Store app identifier for remote release notes retrieval.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>releaseNotesTitle</em></dt>
+			<dd><p>The title for the release notes view.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>closeButtonTitle</em></dt>
+			<dd><p>The title for the close button.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completionBlock</em></dt>
+			<dd><p>The block to be used as a completion handler. If the release notes retrieval is successful, a reference to the initialized release notes view is passed to the block. A <code>NSError</code> object is passed to the block otherwise.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TWSReleaseNotesView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/viewWithReleaseNotesTitle:text:closeButtonTitle:" title="viewWithReleaseNotesTitle:text:closeButtonTitle:"></a>
+	<h3 class="subsubtitle method-title">viewWithReleaseNotesTitle:text:closeButtonTitle:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a release notes view initialized with custom parameters.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (TWSReleaseNotesView *)viewWithReleaseNotesTitle:(NSString *)<em>releaseNotesTitle</em> text:(NSString *)<em>releaseNotesText</em> closeButtonTitle:(NSString *)<em>closeButtonTitle</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>releaseNotesTitle</em></dt>
+			<dd><p>The title for the release notes view.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>releaseNotesText</em></dt>
+			<dd><p>The release notes text.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>closeButtonTitle</em></dt>
+			<dd><p>The title for the close button.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The initialized release notes view.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TWSReleaseNotesView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/showInView:" title="showInView:"></a>
+	<h3 class="subsubtitle method-title">showInView:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Shows the release notes view in the specified container view.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)showInView:(UIView *)<em>containerView</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>containerView</em></dt>
+			<dd><p>The container view in which the release notes view must be shown.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TWSReleaseNotesView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 Matteo Lallone. All rights reserved. (Last updated: 2013-08-06)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 789)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

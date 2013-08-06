@@ -1,0 +1,342 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F819042C17AC0BE5006A0896 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F819042B17AC0BE5006A0896 /* UIKit.framework */; };
+		F819042E17AC0BE5006A0896 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F819042D17AC0BE5006A0896 /* Foundation.framework */; };
+		F819043017AC0BE5006A0896 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F819042F17AC0BE5006A0896 /* CoreGraphics.framework */; };
+		F819043617AC0BE5006A0896 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F819043417AC0BE5006A0896 /* InfoPlist.strings */; };
+		F819043817AC0BE5006A0896 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F819043717AC0BE5006A0896 /* main.m */; };
+		F819043C17AC0BE5006A0896 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F819043B17AC0BE5006A0896 /* AppDelegate.m */; };
+		F819043E17AC0BE5006A0896 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = F819043D17AC0BE5006A0896 /* Default.png */; };
+		F819044017AC0BE5006A0896 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F819043F17AC0BE5006A0896 /* Default@2x.png */; };
+		F819044217AC0BE5006A0896 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F819044117AC0BE5006A0896 /* Default-568h@2x.png */; };
+		F819044F17AC1520006A0896 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F819044D17AC1520006A0896 /* RootViewController.m */; };
+		F893E7FA17AD69FF005DB2FC /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F893E7F917AD69FF005DB2FC /* RootViewController.xib */; };
+		F8C4A09717B1395E003CA095 /* TWSReleaseNotesDownloadOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C4A09217B1395E003CA095 /* TWSReleaseNotesDownloadOperation.m */; };
+		F8C4A09817B1395E003CA095 /* TWSReleaseNotesView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C4A09417B1395E003CA095 /* TWSReleaseNotesView.m */; };
+		F8C4A09917B1395E003CA095 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C4A09617B1395E003CA095 /* UIImage+ImageEffects.m */; };
+		F8E345CC17AC35FF005478D6 /* twkit_catalog_image4.png in Resources */ = {isa = PBXBuildFile; fileRef = F8E345CB17AC35FF005478D6 /* twkit_catalog_image4.png */; };
+		F8E345D217AC3B74005478D6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8E345D117AC3B74005478D6 /* QuartzCore.framework */; };
+		F8E345D417AC3B89005478D6 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8E345D317AC3B89005478D6 /* Accelerate.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F819042817AC0BE5006A0896 /* TWSReleaseNotesViewSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TWSReleaseNotesViewSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F819042B17AC0BE5006A0896 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F819042D17AC0BE5006A0896 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F819042F17AC0BE5006A0896 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F819043317AC0BE5006A0896 /* TWSReleaseNotesViewSample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TWSReleaseNotesViewSample-Info.plist"; sourceTree = "<group>"; };
+		F819043517AC0BE5006A0896 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F819043717AC0BE5006A0896 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F819043917AC0BE5006A0896 /* TWSReleaseNotesViewSample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TWSReleaseNotesViewSample-Prefix.pch"; sourceTree = "<group>"; };
+		F819043A17AC0BE5006A0896 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F819043B17AC0BE5006A0896 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F819043D17AC0BE5006A0896 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		F819043F17AC0BE5006A0896 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		F819044117AC0BE5006A0896 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		F819044C17AC1520006A0896 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		F819044D17AC1520006A0896 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		F893E7F917AD69FF005DB2FC /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
+		F8C4A09117B1395E003CA095 /* TWSReleaseNotesDownloadOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWSReleaseNotesDownloadOperation.h; sourceTree = "<group>"; };
+		F8C4A09217B1395E003CA095 /* TWSReleaseNotesDownloadOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWSReleaseNotesDownloadOperation.m; sourceTree = "<group>"; };
+		F8C4A09317B1395E003CA095 /* TWSReleaseNotesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWSReleaseNotesView.h; sourceTree = "<group>"; };
+		F8C4A09417B1395E003CA095 /* TWSReleaseNotesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWSReleaseNotesView.m; sourceTree = "<group>"; };
+		F8C4A09517B1395E003CA095 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		F8C4A09617B1395E003CA095 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		F8E345CB17AC35FF005478D6 /* twkit_catalog_image4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twkit_catalog_image4.png; sourceTree = "<group>"; };
+		F8E345D117AC3B74005478D6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F8E345D317AC3B89005478D6 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F819042517AC0BE5006A0896 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8E345D417AC3B89005478D6 /* Accelerate.framework in Frameworks */,
+				F8E345D217AC3B74005478D6 /* QuartzCore.framework in Frameworks */,
+				F819042C17AC0BE5006A0896 /* UIKit.framework in Frameworks */,
+				F819042E17AC0BE5006A0896 /* Foundation.framework in Frameworks */,
+				F819043017AC0BE5006A0896 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F819041F17AC0BE5006A0896 = {
+			isa = PBXGroup;
+			children = (
+				F819043117AC0BE5006A0896 /* TWSReleaseNotesViewControllerSample */,
+				F819042A17AC0BE5006A0896 /* Frameworks */,
+				F819042917AC0BE5006A0896 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F819042917AC0BE5006A0896 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F819042817AC0BE5006A0896 /* TWSReleaseNotesViewSample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F819042A17AC0BE5006A0896 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F8E345D317AC3B89005478D6 /* Accelerate.framework */,
+				F819042F17AC0BE5006A0896 /* CoreGraphics.framework */,
+				F819042D17AC0BE5006A0896 /* Foundation.framework */,
+				F8E345D117AC3B74005478D6 /* QuartzCore.framework */,
+				F819042B17AC0BE5006A0896 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F819043117AC0BE5006A0896 /* TWSReleaseNotesViewControllerSample */ = {
+			isa = PBXGroup;
+			children = (
+				F8C4A09017B1395E003CA095 /* TWSReleaseNotesView */,
+				F819043A17AC0BE5006A0896 /* AppDelegate.h */,
+				F819043B17AC0BE5006A0896 /* AppDelegate.m */,
+				F819044C17AC1520006A0896 /* RootViewController.h */,
+				F819044D17AC1520006A0896 /* RootViewController.m */,
+				F893E7F917AD69FF005DB2FC /* RootViewController.xib */,
+				F8E345CB17AC35FF005478D6 /* twkit_catalog_image4.png */,
+				F819043217AC0BE5006A0896 /* Supporting Files */,
+			);
+			name = TWSReleaseNotesViewControllerSample;
+			path = TWSReleaseNotesViewSample;
+			sourceTree = "<group>";
+		};
+		F819043217AC0BE5006A0896 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F819043317AC0BE5006A0896 /* TWSReleaseNotesViewSample-Info.plist */,
+				F819043417AC0BE5006A0896 /* InfoPlist.strings */,
+				F819043717AC0BE5006A0896 /* main.m */,
+				F819043917AC0BE5006A0896 /* TWSReleaseNotesViewSample-Prefix.pch */,
+				F819043D17AC0BE5006A0896 /* Default.png */,
+				F819043F17AC0BE5006A0896 /* Default@2x.png */,
+				F819044117AC0BE5006A0896 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F8C4A09017B1395E003CA095 /* TWSReleaseNotesView */ = {
+			isa = PBXGroup;
+			children = (
+				F8C4A09117B1395E003CA095 /* TWSReleaseNotesDownloadOperation.h */,
+				F8C4A09217B1395E003CA095 /* TWSReleaseNotesDownloadOperation.m */,
+				F8C4A09317B1395E003CA095 /* TWSReleaseNotesView.h */,
+				F8C4A09417B1395E003CA095 /* TWSReleaseNotesView.m */,
+				F8C4A09517B1395E003CA095 /* UIImage+ImageEffects.h */,
+				F8C4A09617B1395E003CA095 /* UIImage+ImageEffects.m */,
+			);
+			name = TWSReleaseNotesView;
+			path = ../../TWSReleaseNotesView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F819042717AC0BE5006A0896 /* TWSReleaseNotesViewSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F819044517AC0BE5006A0896 /* Build configuration list for PBXNativeTarget "TWSReleaseNotesViewSample" */;
+			buildPhases = (
+				F819042417AC0BE5006A0896 /* Sources */,
+				F819042517AC0BE5006A0896 /* Frameworks */,
+				F819042617AC0BE5006A0896 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TWSReleaseNotesViewSample;
+			productName = TWSReleaseNotesViewControllerSample;
+			productReference = F819042817AC0BE5006A0896 /* TWSReleaseNotesViewSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F819042017AC0BE5006A0896 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = Tapwings;
+			};
+			buildConfigurationList = F819042317AC0BE5006A0896 /* Build configuration list for PBXProject "TWSReleaseNotesViewSample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F819041F17AC0BE5006A0896;
+			productRefGroup = F819042917AC0BE5006A0896 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F819042717AC0BE5006A0896 /* TWSReleaseNotesViewSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F819042617AC0BE5006A0896 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F819043617AC0BE5006A0896 /* InfoPlist.strings in Resources */,
+				F819043E17AC0BE5006A0896 /* Default.png in Resources */,
+				F819044017AC0BE5006A0896 /* Default@2x.png in Resources */,
+				F819044217AC0BE5006A0896 /* Default-568h@2x.png in Resources */,
+				F8E345CC17AC35FF005478D6 /* twkit_catalog_image4.png in Resources */,
+				F893E7FA17AD69FF005DB2FC /* RootViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F819042417AC0BE5006A0896 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F819043817AC0BE5006A0896 /* main.m in Sources */,
+				F819043C17AC0BE5006A0896 /* AppDelegate.m in Sources */,
+				F8C4A09917B1395E003CA095 /* UIImage+ImageEffects.m in Sources */,
+				F8C4A09717B1395E003CA095 /* TWSReleaseNotesDownloadOperation.m in Sources */,
+				F819044F17AC1520006A0896 /* RootViewController.m in Sources */,
+				F8C4A09817B1395E003CA095 /* TWSReleaseNotesView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F819043417AC0BE5006A0896 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F819043517AC0BE5006A0896 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F819044317AC0BE5006A0896 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F819044417AC0BE5006A0896 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F819044617AC0BE5006A0896 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TWSReleaseNotesViewSample/TWSReleaseNotesViewSample-Prefix.pch";
+				INFOPLIST_FILE = "TWSReleaseNotesViewSample/TWSReleaseNotesViewSample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_NAME = TWSReleaseNotesViewSample;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F819044717AC0BE5006A0896 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TWSReleaseNotesViewSample/TWSReleaseNotesViewSample-Prefix.pch";
+				INFOPLIST_FILE = "TWSReleaseNotesViewSample/TWSReleaseNotesViewSample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_NAME = TWSReleaseNotesViewSample;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F819042317AC0BE5006A0896 /* Build configuration list for PBXProject "TWSReleaseNotesViewSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F819044317AC0BE5006A0896 /* Debug */,
+				F819044417AC0BE5006A0896 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F819044517AC0BE5006A0896 /* Build configuration list for PBXNativeTarget "TWSReleaseNotesViewSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F819044617AC0BE5006A0896 /* Debug */,
+				F819044717AC0BE5006A0896 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F819042017AC0BE5006A0896 /* Project object */;
+}
