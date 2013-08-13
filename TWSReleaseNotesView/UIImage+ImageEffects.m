@@ -100,6 +100,13 @@
 @implementation UIImage (ImageEffects)
 
 
+- (UIImage *)applySubtleEffect
+{
+    UIColor *tintColor = [UIColor colorWithWhite:1.0 alpha:0.3];
+    return [self applyBlurWithRadius:5 tintColor:tintColor saturationDeltaFactor:1.8 maskImage:nil];
+}
+
+
 - (UIImage *)applyLightEffect
 {
     UIColor *tintColor = [UIColor colorWithWhite:1.0 alpha:0.3];

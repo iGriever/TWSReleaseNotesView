@@ -17,11 +17,19 @@
 		F819044017AC0BE5006A0896 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F819043F17AC0BE5006A0896 /* Default@2x.png */; };
 		F819044217AC0BE5006A0896 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F819044117AC0BE5006A0896 /* Default-568h@2x.png */; };
 		F819044F17AC1520006A0896 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F819044D17AC1520006A0896 /* RootViewController.m */; };
+		F844C4D217BAEF3900021701 /* background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F844C4CF17BAEF3900021701 /* background@2x.png */; };
+		F844C4D317BAEF3900021701 /* btn_bg_hl@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F844C4D017BAEF3900021701 /* btn_bg_hl@2x.png */; };
+		F844C4D417BAEF3900021701 /* btn_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F844C4D117BAEF3900021701 /* btn_bg@2x.png */; };
+		F844C4D817BAF48B00021701 /* icon_7@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F844C4D517BAF48B00021701 /* icon_7@2x.png */; };
+		F844C4D917BAF48B00021701 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F844C4D617BAF48B00021701 /* icon.png */; };
+		F844C4DA17BAF48B00021701 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F844C4D717BAF48B00021701 /* icon@2x.png */; };
 		F893E7FA17AD69FF005DB2FC /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F893E7F917AD69FF005DB2FC /* RootViewController.xib */; };
+		F8B6D83017BAE1F000C2ECB0 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = F8B6D82F17BAE1F000C2ECB0 /* background.png */; };
+		F8B6D83317BAED4400C2ECB0 /* btn_bg_hl.png in Resources */ = {isa = PBXBuildFile; fileRef = F8B6D83117BAED4400C2ECB0 /* btn_bg_hl.png */; };
+		F8B6D83417BAED4400C2ECB0 /* btn_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = F8B6D83217BAED4400C2ECB0 /* btn_bg.png */; };
 		F8C4A09717B1395E003CA095 /* TWSReleaseNotesDownloadOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C4A09217B1395E003CA095 /* TWSReleaseNotesDownloadOperation.m */; };
 		F8C4A09817B1395E003CA095 /* TWSReleaseNotesView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C4A09417B1395E003CA095 /* TWSReleaseNotesView.m */; };
 		F8C4A09917B1395E003CA095 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C4A09617B1395E003CA095 /* UIImage+ImageEffects.m */; };
-		F8E345CC17AC35FF005478D6 /* twkit_catalog_image4.png in Resources */ = {isa = PBXBuildFile; fileRef = F8E345CB17AC35FF005478D6 /* twkit_catalog_image4.png */; };
 		F8E345D217AC3B74005478D6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8E345D117AC3B74005478D6 /* QuartzCore.framework */; };
 		F8E345D417AC3B89005478D6 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8E345D317AC3B89005478D6 /* Accelerate.framework */; };
 /* End PBXBuildFile section */
@@ -42,14 +50,22 @@
 		F819044117AC0BE5006A0896 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		F819044C17AC1520006A0896 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		F819044D17AC1520006A0896 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		F844C4CF17BAEF3900021701 /* background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background@2x.png"; sourceTree = "<group>"; };
+		F844C4D017BAEF3900021701 /* btn_bg_hl@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_bg_hl@2x.png"; sourceTree = "<group>"; };
+		F844C4D117BAEF3900021701 /* btn_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_bg@2x.png"; sourceTree = "<group>"; };
+		F844C4D517BAF48B00021701 /* icon_7@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_7@2x.png"; sourceTree = "<group>"; };
+		F844C4D617BAF48B00021701 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		F844C4D717BAF48B00021701 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 		F893E7F917AD69FF005DB2FC /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
+		F8B6D82F17BAE1F000C2ECB0 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		F8B6D83117BAED4400C2ECB0 /* btn_bg_hl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_bg_hl.png; sourceTree = "<group>"; };
+		F8B6D83217BAED4400C2ECB0 /* btn_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_bg.png; sourceTree = "<group>"; };
 		F8C4A09117B1395E003CA095 /* TWSReleaseNotesDownloadOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWSReleaseNotesDownloadOperation.h; sourceTree = "<group>"; };
 		F8C4A09217B1395E003CA095 /* TWSReleaseNotesDownloadOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWSReleaseNotesDownloadOperation.m; sourceTree = "<group>"; };
 		F8C4A09317B1395E003CA095 /* TWSReleaseNotesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWSReleaseNotesView.h; sourceTree = "<group>"; };
 		F8C4A09417B1395E003CA095 /* TWSReleaseNotesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWSReleaseNotesView.m; sourceTree = "<group>"; };
 		F8C4A09517B1395E003CA095 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
 		F8C4A09617B1395E003CA095 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
-		F8E345CB17AC35FF005478D6 /* twkit_catalog_image4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twkit_catalog_image4.png; sourceTree = "<group>"; };
 		F8E345D117AC3B74005478D6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		F8E345D317AC3B89005478D6 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -108,7 +124,7 @@
 				F819044C17AC1520006A0896 /* RootViewController.h */,
 				F819044D17AC1520006A0896 /* RootViewController.m */,
 				F893E7F917AD69FF005DB2FC /* RootViewController.xib */,
-				F8E345CB17AC35FF005478D6 /* twkit_catalog_image4.png */,
+				F8B6D83517BAED4B00C2ECB0 /* Resources */,
 				F819043217AC0BE5006A0896 /* Supporting Files */,
 			);
 			name = TWSReleaseNotesViewControllerSample;
@@ -127,6 +143,22 @@
 				F819044117AC0BE5006A0896 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F8B6D83517BAED4B00C2ECB0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F844C4D517BAF48B00021701 /* icon_7@2x.png */,
+				F844C4D617BAF48B00021701 /* icon.png */,
+				F844C4D717BAF48B00021701 /* icon@2x.png */,
+				F844C4CF17BAEF3900021701 /* background@2x.png */,
+				F844C4D017BAEF3900021701 /* btn_bg_hl@2x.png */,
+				F844C4D117BAEF3900021701 /* btn_bg@2x.png */,
+				F8B6D82F17BAE1F000C2ECB0 /* background.png */,
+				F8B6D83117BAED4400C2ECB0 /* btn_bg_hl.png */,
+				F8B6D83217BAED4400C2ECB0 /* btn_bg.png */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		F8C4A09017B1395E003CA095 /* TWSReleaseNotesView */ = {
@@ -194,12 +226,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8B6D83317BAED4400C2ECB0 /* btn_bg_hl.png in Resources */,
+				F8B6D83417BAED4400C2ECB0 /* btn_bg.png in Resources */,
 				F819043617AC0BE5006A0896 /* InfoPlist.strings in Resources */,
 				F819043E17AC0BE5006A0896 /* Default.png in Resources */,
+				F8B6D83017BAE1F000C2ECB0 /* background.png in Resources */,
 				F819044017AC0BE5006A0896 /* Default@2x.png in Resources */,
 				F819044217AC0BE5006A0896 /* Default-568h@2x.png in Resources */,
-				F8E345CC17AC35FF005478D6 /* twkit_catalog_image4.png in Resources */,
 				F893E7FA17AD69FF005DB2FC /* RootViewController.xib in Resources */,
+				F844C4D217BAEF3900021701 /* background@2x.png in Resources */,
+				F844C4D317BAEF3900021701 /* btn_bg_hl@2x.png in Resources */,
+				F844C4D417BAEF3900021701 /* btn_bg@2x.png in Resources */,
+				F844C4D817BAF48B00021701 /* icon_7@2x.png in Resources */,
+				F844C4D917BAF48B00021701 /* icon.png in Resources */,
+				F844C4DA17BAF48B00021701 /* icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

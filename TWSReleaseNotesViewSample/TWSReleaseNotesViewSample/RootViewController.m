@@ -35,6 +35,18 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    [self setWantsFullScreenLayout:YES];
+    
+    // Setup local button
+    [self.localButton setBackgroundColor:[UIColor clearColor]];
+    [self.localButton setBackgroundImage:[[UIImage imageNamed:@"btn_bg"] resizableImageWithCapInsets:UIEdgeInsetsMake(0.0f, 6.0f, 0.0f, 6.0f) resizingMode:UIImageResizingModeStretch] forState:UIControlStateNormal];
+    [self.localButton setBackgroundImage:[[UIImage imageNamed:@"btn_bg_hl"] resizableImageWithCapInsets:UIEdgeInsetsMake(0.0f, 6.0f, 0.0f, 6.0f) resizingMode:UIImageResizingModeStretch] forState:UIControlStateHighlighted];
+    
+    // Setup remote button
+    [self.remoteButton setBackgroundColor:[UIColor clearColor]];
+    [self.remoteButton setBackgroundImage:[[UIImage imageNamed:@"btn_bg"] resizableImageWithCapInsets:UIEdgeInsetsMake(0.0f, 6.0f, 0.0f, 6.0f) resizingMode:UIImageResizingModeStretch] forState:UIControlStateNormal];
+    [self.remoteButton setBackgroundImage:[[UIImage imageNamed:@"btn_bg_hl"] resizableImageWithCapInsets:UIEdgeInsetsMake(0.0f, 6.0f, 0.0f, 6.0f) resizingMode:UIImageResizingModeStretch] forState:UIControlStateHighlighted];
 }
 
 - (void)didReceiveMemoryWarning
@@ -76,8 +88,6 @@
         }
         else
         {
-            NSLog(@"Received data:\n\n%@", releaseNotesText);
-            
             // Create and show release notes view
             [releaseNotesView showInView:self.view];
         }

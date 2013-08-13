@@ -33,6 +33,7 @@ static const CGFloat kTWSReleaseNotesViewContainerViewCornerRadius = 3.0f;
 static const CGFloat kTWSReleaseNotesViewContainerViewWidth = 280.0f;
 static const CGFloat kTWSReleaseNotesViewContainerViewMinVerticalPadding = 60.0f;
 static const CGFloat kTWSReleaseNotesViewInnerContainerSidePadding = 6.0f;
+static const CGFloat kTWSReleaseNotesViewBlurredImageViewCornerRadius = 5.0f;
 static const CGFloat kTWSReleaseNotesViewTitleLabelHeight = 44.0f;
 static const CGFloat kTWSReleaseNotesViewTextViewInsetHeight = 9.0f;
 static const CGFloat kTWSReleaseNotesViewButtonBoxHeight = 44.0f;
@@ -224,7 +225,7 @@ static const NSTimeInterval kTWSReleaseNotesViewTransitionDuration = 0.2f;
     _backgroundBlurredImageView = [[UIImageView alloc] initWithFrame:CGRectZero];
     [_backgroundBlurredImageView setContentMode:UIViewContentModeCenter];
     [_backgroundBlurredImageView setClipsToBounds:YES];
-    [_backgroundBlurredImageView.layer setCornerRadius:kTWSReleaseNotesViewContainerViewCornerRadius];
+    [_backgroundBlurredImageView.layer setCornerRadius:kTWSReleaseNotesViewBlurredImageViewCornerRadius];
     [_backgroundBlurredImageView setAutoresizingMask:UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight];
     [_popupView addSubview:_backgroundBlurredImageView];
     
@@ -233,7 +234,7 @@ static const NSTimeInterval kTWSReleaseNotesViewTransitionDuration = 0.2f;
     [_backgroundOverlayView setAutoresizingMask:UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight];
     [_backgroundOverlayView setClipsToBounds:YES];
     [_backgroundOverlayView.layer setCornerRadius:kTWSReleaseNotesViewContainerViewCornerRadius];
-    [_popupView addSubview:_backgroundOverlayView];
+    [_backgroundBlurredImageView addSubview:_backgroundOverlayView];
     
     // Main text container view
     _textContainerView = [[UIView alloc] initWithFrame:CGRectZero];
@@ -381,7 +382,7 @@ static const NSTimeInterval kTWSReleaseNotesViewTransitionDuration = 0.2f;
     UIGraphicsEndImageContext();
     
     // Apply blur effect
-    UIImage *blurredImage = [cloneImage applyLightEffect];
+    UIImage *blurredImage = [cloneImage applySubtleEffect];
     self.backgroundBlurredImageView.image = blurredImage;
     [self.backgroundBlurredImageView setNeedsDisplay];
 }

@@ -10,6 +10,8 @@
 
 @interface RootViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIButton *localButton;
+@property (weak, nonatomic) IBOutlet UIButton *remoteButton;
 - (IBAction)showLocalButtonPressed:(id)sender;
 - (IBAction)showRemoteButtonPressed:(id)sender;
 
