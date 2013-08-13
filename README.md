@@ -59,6 +59,8 @@ TWSReleaseNotesView is a simple way to address those issues. It comes with a str
 ## Sample project
 The **TWSReleaseNotesViewSample** sample project shows how to deal with the two use cases described above.
 
+![Sample project menu](TutorialImages/sampleProject01.png) ![Sample project view](TutorialImages/sampleProject02.png)
+
 ## Features
 * Version check in order to choose whether showing the release notes view or not.
 * Local release notes view with custom appearance and text information.
