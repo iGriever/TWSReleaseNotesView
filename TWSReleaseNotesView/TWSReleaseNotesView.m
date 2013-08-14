@@ -154,11 +154,12 @@ static const NSTimeInterval kTWSReleaseNotesViewTransitionDuration = 0.2f;
     
     __weak TWSReleaseNotesDownloadOperation *weakOperation = operation;
     [operation setCompletionBlock:^{
+        TWSReleaseNotesDownloadOperation *strongOperation = weakOperation;
         if (completionBlock)
         {
-            if (weakOperation.error)
+            if (strongOperation.error)
             {
-                NSError *error = weakOperation.error;
+                NSError *error = strongOperation.error;
                 
                 [[NSOperationQueue mainQueue] addOperationWithBlock:^{
                     // Perform completion block with error
@@ -168,7 +169,7 @@ static const NSTimeInterval kTWSReleaseNotesViewTransitionDuration = 0.2f;
             else
             {
                 // Get release note text
-                NSString *releaseNotesText = weakOperation.releaseNotesText;
+                NSString *releaseNotesText = strongOperation.releaseNotesText;
                 
                 [[NSOperationQueue mainQueue] addOperationWithBlock:^{
                     // Create and show release notes view
