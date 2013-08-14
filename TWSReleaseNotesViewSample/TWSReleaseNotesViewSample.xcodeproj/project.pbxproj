@@ -337,7 +337,7 @@
 				INFOPLIST_FILE = "TWSReleaseNotesViewSample/TWSReleaseNotesViewSample-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = TWSReleaseNotesViewSample;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -345,12 +345,16 @@
 		F819044717AC0BE5006A0896 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Matteo Lallone (2BHJQK4UZU)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Matteo Lallone (2BHJQK4UZU)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TWSReleaseNotesViewSample/TWSReleaseNotesViewSample-Prefix.pch";
 				INFOPLIST_FILE = "TWSReleaseNotesViewSample/TWSReleaseNotesViewSample-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = TWSReleaseNotesViewSample;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				PROVISIONING_PROFILE = "9F71268A-3685-47BD-8770-868A43D83E6D";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "9F71268A-3685-47BD-8770-868A43D83E6D";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
