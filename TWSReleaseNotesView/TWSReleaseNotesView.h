@@ -11,7 +11,9 @@
 /**
  Use the `TWSReleaseNotesView` class to display a custom release notes view, to be shown when the app is opened for the first time after an update.
  
- In order to check if the release notes view must be shown, the <isAppVersionUpdated> can be used. This method will check a previously stored app version string. If the stored app version string does not exist or does not match the current version string, it will return `YES`, storing the current version string.
+ If you want to check if the app is on its first launch, you can use the <isAppOnFirstLaunch> method. This method will check a previously stored app version string. If a stored app version string does not exist, it will return `YES`, storing the current version string.
+ 
+ In order to check if the app was updated, the <isAppVersionUpdated> method can be used. This method will check a previously stored app version string. If a stored app version string is present but it does not match the current version string, it will return `YES`, storing the current version string.
  
  The release notes view can be initialized using the <viewWithReleaseNotesTitle:text:closeButtonTitle:> class method, if the release notes text is set directly when calling the method. If the release notes must be retrieved from the App Store, you must use the <setupViewWithAppIdentifier:releaseNotesTitle:closeButtonTitle:completionBlock:> class method.
  
@@ -111,9 +113,15 @@
 
 /**
  Checks for app update state, using the `CFBundleVersion` key in the application `Info.plist`.
- @return  Returns `YES` if no previous app version string was stored, or if the previously stored app version string does not match the current version string, `NO` otherwise.
+ @return  Returns `YES` if a previous app version string was stored and if it does not match the current version string, `NO` otherwise.
  */
 + (BOOL)isAppVersionUpdated;
+
+/**
+ Checks if the app version key is currently stored or not.
+ @return  Returns `YES` if no previous app version string was stored, `NO` otherwise.
+ */
++ (BOOL)isAppOnFirstLaunch;
 
 
 /** @name Showing the release notes view */

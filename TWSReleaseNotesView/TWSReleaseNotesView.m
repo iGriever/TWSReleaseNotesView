@@ -66,6 +66,7 @@ static const NSTimeInterval kTWSReleaseNotesViewTransitionDuration = 0.2f;
 - (void)closeButtonDragExit:(id)sender;
 - (void)closeButtonDragEnter:(id)sender;
 - (void)dismiss;
++ (BOOL)versionStatusWithConditionResult:(BOOL)conditionResult;
 
 @end
 
@@ -191,20 +192,22 @@ static const NSTimeInterval kTWSReleaseNotesViewTransitionDuration = 0.2f;
     // Read stored version string and current version string
     NSString *previousAppVersion = [[NSUserDefaults standardUserDefaults] stringForKey:kTWSReleaseNotesViewVersionKey];
     NSString *currentAppVersion = [[NSBundle mainBundle] infoDictionary][@"CFBundleVersion"];
-    
-    if ([previousAppVersion isEqualToString:currentAppVersion])
-    {
-        // App not updated
-        return NO;
-    }
-    else
-    {
-        // App updated - Update stored version string
-        [[NSUserDefaults standardUserDefaults] setObject:currentAppVersion forKey:kTWSReleaseNotesViewVersionKey];
-        [[NSUserDefaults standardUserDefaults] synchronize];
-        
-        return YES;
-    }
+ 
+    // Flag app as updated if a previous version string is found and it does not match with the current version string
+    BOOL conditionResult = (previousAppVersion && ![previousAppVersion isEqualToString:currentAppVersion]) ? YES : NO;
+
+    return [self versionStatusWithConditionResult:conditionResult];
+}
+
++ (BOOL)isAppOnFirstLaunch
+{
+    // Read stored version string and current version string
+    NSString *previousAppVersion = [[NSUserDefaults standardUserDefaults] stringForKey:kTWSReleaseNotesViewVersionKey];
+
+    // Flag app as on first launch if no previous app string is found
+    BOOL conditionResult = (!previousAppVersion) ? YES : NO;
+
+    return [self versionStatusWithConditionResult:conditionResult];
 }
 
 #pragma mark - Private Methods
@@ -453,6 +456,24 @@ static const NSTimeInterval kTWSReleaseNotesViewTransitionDuration = 0.2f;
             }];
         }
     }];
+}
+
++ (BOOL)versionStatusWithConditionResult:(BOOL)conditionResult
+{
+    if (conditionResult)
+    {
+        // Version string not found - app on first launch
+        NSString *currentAppVersion = [[NSBundle mainBundle] infoDictionary][@"CFBundleVersion"];
+        [[NSUserDefaults standardUserDefaults] setObject:currentAppVersion forKey:kTWSReleaseNotesViewVersionKey];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+        
+        return YES;
+    }
+    else
+    {
+        // Version string found - app not on first launch
+        return NO;
+    }
 }
 
 #pragma mark - Instance Methods

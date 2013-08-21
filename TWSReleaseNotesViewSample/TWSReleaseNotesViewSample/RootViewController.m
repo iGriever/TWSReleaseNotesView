@@ -59,8 +59,8 @@
 {
     [super viewDidAppear:animated];
     
-    // Check for app update
-    if ([TWSReleaseNotesView isAppVersionUpdated])
+    // Check for app update if app is not on first launch
+    if (![TWSReleaseNotesView isAppOnFirstLaunch] && [TWSReleaseNotesView isAppVersionUpdated])
     {
         [self showLocalReleaseNotesView];
     }
