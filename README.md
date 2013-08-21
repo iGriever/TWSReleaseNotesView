@@ -22,8 +22,8 @@ TWSReleaseNotesView is a simple way to address those issues. It comes with a str
 
 ## Version check and local release notes view setup
 ```objective-c
-    // Check for app update
-    if ([TWSReleaseNotesView isAppVersionUpdated])
+    // Check for first app launch and app update
+    if (![TWSReleaseNotesView isAppOnFirstLaunch] && [TWSReleaseNotesView isAppVersionUpdated])
     {
         // Create the release notes view
         NSString *currentAppVersion = [[NSBundle mainBundle] infoDictionary][@"CFBundleVersion"];
@@ -62,6 +62,7 @@ The **TWSReleaseNotesViewSample** sample project shows how to deal with the two 
 ![Sample project menu](TutorialImages/sampleProject01.png)    ![Sample project view](TutorialImages/sampleProject02.png)
 
 ## Features
+* First app launch check.
 * Version check in order to choose whether showing the release notes view or not.
 * Local release notes view with custom appearance and text information.
 * Remote release notes view using the application's Apple ID, in order to retrieve the last release notes directly from App Store, using the iTunes Search API.
