@@ -87,6 +87,8 @@
 	
 	<option value="class_methods">Class Methods</option>
 	
+	<option value="//api/name/isAppOnFirstLaunch">&nbsp;&nbsp;&nbsp;&nbsp;+ isAppOnFirstLaunch</option>
+	
 	<option value="//api/name/isAppVersionUpdated">&nbsp;&nbsp;&nbsp;&nbsp;+ isAppVersionUpdated</option>
 	
 	<option value="//api/name/setupViewWithAppIdentifier:releaseNotesTitle:closeButtonTitle:completionBlock:">&nbsp;&nbsp;&nbsp;&nbsp;+ setupViewWithAppIdentifier:releaseNotesTitle:closeButtonTitle:completionBlock:</option>
@@ -180,6 +182,8 @@
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isAppOnFirstLaunch">isAppOnFirstLaunch</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isAppVersionUpdated">isAppVersionUpdated</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setupViewWithAppIdentifier:releaseNotesTitle:closeButtonTitle:completionBlock:">setupViewWithAppIdentifier:releaseNotesTitle:closeButtonTitle:completionBlock:</a></span></li>
@@ -233,7 +237,9 @@
 						<h2 class="subtitle subtitle-overview">Overview</h2>
 						<p>Use the <code>TWSReleaseNotesView</code> class to display a custom release notes view, to be shown when the app is opened for the first time after an update.</p>
 
-<p>In order to check if the release notes view must be shown, the <a href="#//api/name/isAppVersionUpdated">isAppVersionUpdated</a> can be used. This method will check a previously stored app version string. If the stored app version string does not exist or does not match the current version string, it will return <code>YES</code>, storing the current version string.</p>
+<p>If you want to check if the app is on its first launch, you can use the <a href="#//api/name/isAppOnFirstLaunch">isAppOnFirstLaunch</a> method. This method will check a previously stored app version string. If a stored app version string does not exist, it will return <code>YES</code>, storing the current version string.</p>
+
+<p>In order to check if the app was updated, the <a href="#//api/name/isAppVersionUpdated">isAppVersionUpdated</a> method can be used. This method will check a previously stored app version string. If a stored app version string is present but it does not match the current version string, it will return <code>YES</code>, storing the current version string.</p>
 
 <p>The release notes view can be initialized using the <a href="#//api/name/viewWithReleaseNotesTitle:text:closeButtonTitle:">viewWithReleaseNotesTitle:text:closeButtonTitle:</a> class method, if the release notes text is set directly when calling the method. If the release notes must be retrieved from the App Store, you must use the <a href="#//api/name/setupViewWithAppIdentifier:releaseNotesTitle:closeButtonTitle:completionBlock:">setupViewWithAppIdentifier:releaseNotesTitle:closeButtonTitle:completionBlock:</a> class method.</p>
 
@@ -434,6 +440,13 @@
 	<span class="tooltip">
 		<code><a href="#//api/name/isAppVersionUpdated">+&nbsp;isAppVersionUpdated</a></code>
 		<span class="tooltip"><p>Checks for app update state, using the <code>CFBundleVersion</code> key in the application <code>Info.plist</code>.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isAppOnFirstLaunch">+&nbsp;isAppOnFirstLaunch</a></code>
+		<span class="tooltip"><p>Checks if the app version key is currently stored or not.</p></span>
 	</span>
 	
 	
@@ -1230,6 +1243,47 @@
 						<h2 class="subtitle subtitle-methods">Class Methods</h2>
 						
 						<div class="section-method">
+	<a name="//api/name/isAppOnFirstLaunch" title="isAppOnFirstLaunch"></a>
+	<h3 class="subsubtitle method-title">isAppOnFirstLaunch</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Checks if the app version key is currently stored or not.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (BOOL)isAppOnFirstLaunch</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Returns <code>YES</code> if no previous app version string was stored, <code>NO</code> otherwise.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">TWSReleaseNotesView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/isAppVersionUpdated" title="isAppVersionUpdated"></a>
 	<h3 class="subsubtitle method-title">isAppVersionUpdated</h3>
 	
@@ -1249,7 +1303,7 @@
 	
 	<div class="method-subsection return">
 		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>Returns <code>YES</code> if no previous app version string was stored, or if the previously stored app version string does not match the current version string, <code>NO</code> otherwise.</p>
+		<p>Returns <code>YES</code> if a previous app version string was stored and if it does not match the current version string, <code>NO</code> otherwise.</p>
 	</div>
 	
 	
@@ -1459,7 +1513,7 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 Matteo Lallone. All rights reserved. (Last updated: 2013-08-06)</span><br />
+						<p><span class="copyright">&copy; 2013 Matteo Lallone. All rights reserved. (Last updated: 2013-08-21)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 789)</a>.</span></p>
 						
