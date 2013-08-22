@@ -11,6 +11,11 @@ TWSReleaseNotesView is a simple way to address those issues. It comes with a str
 
 
 ## How to get started
+### CocoaPods
+1. Just add the following line to your Podfile: `pod 'TWSReleaseNotesView', '~> 1.1.0'`
+2. You're good to go!
+
+### Manual installation
 1. Download the TWSReleaseNotesView folder and add it to your project.
 2. In addition to the default `UIKit`, `CoreGraphics` and `Foundation`, there's a dependency from the `Accelerate` and the `Quartzcore` frameworks. If any of them is missing in your Frameworks list, follow these steps in order to add them:
   * Go to the "Build Phases" tab for your project target.
