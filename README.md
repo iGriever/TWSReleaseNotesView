@@ -12,7 +12,7 @@ TWSReleaseNotesView is a simple way to address those issues. It comes with a str
 
 ## How to get started
 ### CocoaPods
-1. Just add the following line to your Podfile: `pod 'TWSReleaseNotesView', '~> 1.1.0'`
+1. Just add the following line to your Podfile: `pod 'TWSReleaseNotesView', '~> 1.1.1'`
 2. You're good to go!
 
 ### Manual installation
