@@ -269,7 +269,7 @@ static const NSTimeInterval kTWSReleaseNotesViewTransitionDuration = 0.2f;
     [_titleLabel.layer setShadowOpacity:1.0f];
     [_titleLabel setTextAlignment:NSTextAlignmentCenter];
     [_titleLabel setText:_releaseNotesTitle];
-    [_textContainerView addSubview:_titleLabel];
+    [_popupView addSubview:_titleLabel];
     
     // Release notes text view
     _textView = [[TWSUnselectableTextView alloc] initWithFrame:CGRectZero];
@@ -279,7 +279,7 @@ static const NSTimeInterval kTWSReleaseNotesViewTransitionDuration = 0.2f;
     [_textView.layer setShadowOpacity:1.0f];
     [_textView setEditable:NO];
     [_textView setText:_releaseNotesText];
-    [_textContainerView addSubview:_textView];
+    [_popupView addSubview:_textView];
     
     // Close button
     _closeButton = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -289,7 +289,7 @@ static const NSTimeInterval kTWSReleaseNotesViewTransitionDuration = 0.2f;
     [_closeButton addTarget:self action:@selector(closeButtonTouchedDown:) forControlEvents:UIControlEventTouchDown];
     [_closeButton addTarget:self action:@selector(closeButtonDragExit:) forControlEvents:UIControlEventTouchDragExit];
     [_closeButton addTarget:self action:@selector(closeButtonDragEnter:) forControlEvents:UIControlEventTouchDragEnter];
-    [_textContainerView addSubview:_closeButton];
+    [_popupView addSubview:_closeButton];
 }
 
 - (void)updateSubviewsLayoutInContainerView:(UIView *)containerView
@@ -321,7 +321,7 @@ static const NSTimeInterval kTWSReleaseNotesViewTransitionDuration = 0.2f;
     [self.textContainerView setFrame:CGRectInset(self.popupView.bounds, kTWSReleaseNotesViewInnerContainerSidePadding, kTWSReleaseNotesViewInnerContainerSidePadding)];
     
     // Title label frame
-    CGRect titleLabelFrame = self.textContainerView.bounds;
+    CGRect titleLabelFrame = self.textContainerView.frame;
     titleLabelFrame.size.height = kTWSReleaseNotesViewTitleLabelHeight;
     [self.titleLabel setFrame:titleLabelFrame];
     
@@ -331,8 +331,8 @@ static const NSTimeInterval kTWSReleaseNotesViewTransitionDuration = 0.2f;
     [self.textContainerView addSubview:topSeparatorView];
     
     // Text view frame
-    CGRect textViewFrame = self.textContainerView.bounds;
-    textViewFrame.origin.y = kTWSReleaseNotesViewTitleLabelHeight + 2*kTWSReleaseNotesViewSeparatorHeight;
+    CGRect textViewFrame = self.textContainerView.frame;
+    textViewFrame.origin.y = CGRectGetMinY(textViewFrame) + kTWSReleaseNotesViewTitleLabelHeight + 2*kTWSReleaseNotesViewSeparatorHeight;
     textViewFrame.size.height = self.textContainerView.frame.size.height - kTWSReleaseNotesViewTitleLabelHeight - 3*kTWSReleaseNotesViewSeparatorHeight - kTWSReleaseNotesViewButtonBoxHeight;
     [self.textView setFrame:textViewFrame];
     
@@ -342,8 +342,8 @@ static const NSTimeInterval kTWSReleaseNotesViewTransitionDuration = 0.2f;
     [self.textContainerView addSubview:bottomSeparatorView];
     
     // Close button
-    CGRect closeButtonFrame = self.textContainerView.bounds;
-    closeButtonFrame.origin.y = closeButtonFrame.size.height - kTWSReleaseNotesViewButtonBoxHeight;
+    CGRect closeButtonFrame = self.textContainerView.frame;
+    closeButtonFrame.origin.y = CGRectGetMaxY(closeButtonFrame) - kTWSReleaseNotesViewButtonBoxHeight;
     closeButtonFrame.size.height = kTWSReleaseNotesViewButtonBoxHeight;
     [self.closeButton setFrame:closeButtonFrame];
 }
