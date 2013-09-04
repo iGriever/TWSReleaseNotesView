@@ -34,6 +34,7 @@ static const CGFloat kTWSReleaseNotesViewContainerViewWidth = 280.0f;
 static const CGFloat kTWSReleaseNotesViewContainerViewMinVerticalPadding = 60.0f;
 static const CGFloat kTWSReleaseNotesViewInnerContainerSidePadding = 6.0f;
 static const CGFloat kTWSReleaseNotesViewBlurredImageViewCornerRadius = 5.0f;
+static const CGFloat kTWSReleaseNotesViewTitleSidePadding = 6.0f;
 static const CGFloat kTWSReleaseNotesViewTitleLabelHeight = 44.0f;
 static const CGFloat kTWSReleaseNotesViewTextViewInsetHeight = 9.0f;
 static const CGFloat kTWSReleaseNotesViewButtonBoxHeight = 44.0f;
@@ -265,6 +266,7 @@ static const NSTimeInterval kTWSReleaseNotesViewTransitionDuration = 0.2f;
     _titleLabel = [[UILabel alloc] initWithFrame:CGRectZero];
     [_titleLabel setAutoresizingMask:UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleBottomMargin];
     [_titleLabel setBackgroundColor:[UIColor clearColor]];
+    [_titleLabel setNumberOfLines:2];
     [_titleLabel.layer setShadowRadius:0.0f];
     [_titleLabel.layer setShadowOpacity:1.0f];
     [_titleLabel setTextAlignment:NSTextAlignmentCenter];
@@ -321,7 +323,7 @@ static const NSTimeInterval kTWSReleaseNotesViewTransitionDuration = 0.2f;
     [self.textContainerView setFrame:CGRectInset(self.popupView.bounds, kTWSReleaseNotesViewInnerContainerSidePadding, kTWSReleaseNotesViewInnerContainerSidePadding)];
     
     // Title label frame
-    CGRect titleLabelFrame = self.textContainerView.frame;
+    CGRect titleLabelFrame = CGRectInset(self.textContainerView.frame, kTWSReleaseNotesViewTitleSidePadding, 0.0f);
     titleLabelFrame.size.height = kTWSReleaseNotesViewTitleLabelHeight;
     [self.titleLabel setFrame:titleLabelFrame];
     
