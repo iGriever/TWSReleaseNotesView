@@ -38,15 +38,43 @@
     
     [self setWantsFullScreenLayout:YES];
     
+	BOOL bDoesSupportResizableImageWithCapInsets = [[[UIImage alloc] init] respondsToSelector:@selector(resizableImageWithCapInsets:resizingMode:)];
+	UIImage *buttonNormalImage = [UIImage imageNamed:@"btn_bg"], *buttonHighlightedImage = [UIImage imageNamed:@"btn_bg_hl"];
+	
     // Setup local button
     [self.localButton setBackgroundColor:[UIColor clearColor]];
-    [self.localButton setBackgroundImage:[[UIImage imageNamed:@"btn_bg"] resizableImageWithCapInsets:UIEdgeInsetsMake(0.0f, 6.0f, 0.0f, 6.0f) resizingMode:UIImageResizingModeStretch] forState:UIControlStateNormal];
-    [self.localButton setBackgroundImage:[[UIImage imageNamed:@"btn_bg_hl"] resizableImageWithCapInsets:UIEdgeInsetsMake(0.0f, 6.0f, 0.0f, 6.0f) resizingMode:UIImageResizingModeStretch] forState:UIControlStateHighlighted];
+	if( bDoesSupportResizableImageWithCapInsets )
+	{
+		buttonNormalImage = [buttonNormalImage resizableImageWithCapInsets:UIEdgeInsetsMake(0.0f, 6.0f, 0.0f, 6.0f) resizingMode:UIImageResizingModeStretch];
+		buttonHighlightedImage = [buttonHighlightedImage resizableImageWithCapInsets:UIEdgeInsetsMake(0.0f, 6.0f, 0.0f, 6.0f) resizingMode:UIImageResizingModeStretch];
+	}
+	else
+	{
+		//iOS 5 compatibility
+		buttonNormalImage = [buttonNormalImage resizableImageWithCapInsets:UIEdgeInsetsMake(0.0f, 6.0f, 0.0f, 6.0f)];
+		buttonHighlightedImage = [buttonHighlightedImage resizableImageWithCapInsets:UIEdgeInsetsMake(0.0f, 6.0f, 0.0f, 6.0f)];
+	}
+	[self.localButton setBackgroundImage:buttonNormalImage forState:UIControlStateNormal];
+	[self.localButton setBackgroundImage:buttonHighlightedImage forState:UIControlStateHighlighted];
     
-    // Setup remote button
+    
+	// Setup remote button
     [self.remoteButton setBackgroundColor:[UIColor clearColor]];
-    [self.remoteButton setBackgroundImage:[[UIImage imageNamed:@"btn_bg"] resizableImageWithCapInsets:UIEdgeInsetsMake(0.0f, 6.0f, 0.0f, 6.0f) resizingMode:UIImageResizingModeStretch] forState:UIControlStateNormal];
-    [self.remoteButton setBackgroundImage:[[UIImage imageNamed:@"btn_bg_hl"] resizableImageWithCapInsets:UIEdgeInsetsMake(0.0f, 6.0f, 0.0f, 6.0f) resizingMode:UIImageResizingModeStretch] forState:UIControlStateHighlighted];
+	buttonNormalImage = [UIImage imageNamed:@"btn_bg"];
+	buttonHighlightedImage = [UIImage imageNamed:@"btn_bg_hl"];
+	if( bDoesSupportResizableImageWithCapInsets )
+	{
+		buttonNormalImage = [buttonNormalImage resizableImageWithCapInsets:UIEdgeInsetsMake(0.0f, 6.0f, 0.0f, 6.0f) resizingMode:UIImageResizingModeStretch];
+		buttonHighlightedImage = [buttonHighlightedImage resizableImageWithCapInsets:UIEdgeInsetsMake(0.0f, 6.0f, 0.0f, 6.0f) resizingMode:UIImageResizingModeStretch];
+	}
+	else
+	{
+		//iOS 5 compatibility
+		buttonNormalImage = [buttonNormalImage resizableImageWithCapInsets:UIEdgeInsetsMake(0.0f, 6.0f, 0.0f, 6.0f)];
+		buttonHighlightedImage = [buttonHighlightedImage resizableImageWithCapInsets:UIEdgeInsetsMake(0.0f, 6.0f, 0.0f, 6.0f)];
+	}
+	[self.remoteButton setBackgroundImage:buttonNormalImage forState:UIControlStateNormal];
+	[self.remoteButton setBackgroundImage:buttonHighlightedImage forState:UIControlStateHighlighted];
 }
 
 - (void)didReceiveMemoryWarning
