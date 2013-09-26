@@ -335,7 +335,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TWSReleaseNotesViewSample/TWSReleaseNotesViewSample-Prefix.pch";
 				INFOPLIST_FILE = "TWSReleaseNotesViewSample/TWSReleaseNotesViewSample-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = TWSReleaseNotesViewSample;
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
@@ -350,7 +350,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TWSReleaseNotesViewSample/TWSReleaseNotesViewSample-Prefix.pch";
 				INFOPLIST_FILE = "TWSReleaseNotesViewSample/TWSReleaseNotesViewSample-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = TWSReleaseNotesViewSample;
 				PROVISIONING_PROFILE = "9F71268A-3685-47BD-8770-868A43D83E6D";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "9F71268A-3685-47BD-8770-868A43D83E6D";
