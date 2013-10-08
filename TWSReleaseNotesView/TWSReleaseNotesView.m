@@ -419,7 +419,15 @@ static const NSTimeInterval kTWSReleaseNotesViewTransitionDuration = 0.2f;
 - (CGFloat)expectedReleaseNotesTextHeightWithWidth:(CGFloat)width;
 {
     CGSize maximumLabelSize = CGSizeMake(width, MAXFLOAT);
-    CGSize expectedLabelSize = [self.releaseNotesText sizeWithFont:self.releaseNotesFont constrainedToSize:maximumLabelSize lineBreakMode:NSLineBreakByWordWrapping];
+	CGSize expectedLabelSize;
+#if __IPHONE_OS_VERSION_MIN_REQUIRED >= 70000
+    expectedLabelSize = [self.releaseNotesText boundingRectWithSize: maximumLabelSize
+															options: NSStringDrawingUsesLineFragmentOrigin
+														 attributes: @{ NSFontAttributeName : self.releaseNotesFont }
+															context: nil].size;
+#else
+    expectedLabelSize = [self.releaseNotesText sizeWithFont:self.releaseNotesFont constrainedToSize:maximumLabelSize lineBreakMode:NSLineBreakByWordWrapping];
+#endif
     return expectedLabelSize.height + 2*kTWSReleaseNotesViewTextViewInsetHeight;
 }
 
