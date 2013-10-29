@@ -377,6 +377,7 @@ static const NSTimeInterval kTWSReleaseNotesViewTransitionDuration = 0.2f;
     
     [self.textView setFont:self.releaseNotesFont];
     [self.textView setTextColor:self.releaseNotesColor];
+    [self.textView setContentOffset:CGPointMake(0, 0) animated:NO];
     [self.textView.layer setShadowColor:[self.releaseNotesShadowColor CGColor]];
     [self.textView.layer setShadowOffset:self.releaseNotesShadowOffset];
     
