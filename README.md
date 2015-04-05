@@ -17,7 +17,7 @@ TWSReleaseNotesView is a simple way to address those issues. It comes with a str
 
 ### Manual installation
 1. Download the TWSReleaseNotesView folder and add it to your project.
-2. In addition to the default `UIKit`, `CoreGraphics` and `Foundation`, there's a dependency from the `Accelerate` and the `Quartzcore` frameworks. If any of them is missing in your Frameworks list, follow these steps in order to add them:
+2. In addition to the default `UIKit`, `CoreGraphics` and `Foundation`, there's a dependency from the `Accelerate` and the `QuartzCore` frameworks. If any of them is missing in your Frameworks list, follow these steps in order to add them:
   * Go to the "Build Phases" tab for your project target.
   * Click the `+` button in the collapsible "Link Binary With Libraries" section.
   * Add the missing frameworks.
