@@ -467,6 +467,8 @@ static const NSTimeInterval kTWSReleaseNotesViewTransitionDuration = 0.2f;
                 if (finished)
                 {
                     [self removeFromSuperview];
+                    if (self.handler)
+                        self.handler();
                 }
             }];
         }
