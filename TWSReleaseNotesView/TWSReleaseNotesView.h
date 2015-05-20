@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-typedef void (^TWSReleaseNotesViewCompletionHandler);
+typedef void (^TWSReleaseNotesViewCompletionHandler)(void);
 
 /**
  Use the `TWSReleaseNotesView` class to display a custom release notes view, to be shown when the app is opened for the first time after an update.
