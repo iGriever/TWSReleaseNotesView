@@ -99,7 +99,7 @@
 - (void)showLocalReleaseNotesView
 {
     // Create the release notes view
-    NSString *currentAppVersion = [[NSBundle mainBundle] infoDictionary][@"CFBundleVersion"];
+    NSString *currentAppVersion = [[NSBundle mainBundle] infoDictionary][@"CFBundleShortVersionString"];
     TWSReleaseNotesView *releaseNotesView = [TWSReleaseNotesView viewWithReleaseNotesTitle:[NSString stringWithFormat:@"What's new in version\n%@:", currentAppVersion] text:@"• Create custom stations of your favorite podcasts that update automatically with new episodes\n• Choose whether your stations begin playing with the newest or oldest unplayed episode\n• Your stations are stored in iCloud and kept up-to-date on all of your devices\n• Create an On-The-Go playlist with your own list of episodes\n• Playlists synced from iTunes now appear in the Podcasts app\n• The Now Playing view has been redesigned with easier to use playback controls\n• Addressed an issue with resuming playback when returning to the app\n• Additional performance and stability improvements" closeButtonTitle:@"Close"];
     
     // Show the release notes view
@@ -108,7 +108,7 @@
 
 - (void)showRemoteReleaseNotesView
 {
-    NSString *currentAppVersion = [[NSBundle mainBundle] infoDictionary][@"CFBundleVersion"];
+    NSString *currentAppVersion = [[NSBundle mainBundle] infoDictionary][@"CFBundleShortVersionString"];
     [TWSReleaseNotesView setupViewWithAppIdentifier:@"329670577" releaseNotesTitle:[NSString stringWithFormat:@"What's new in version %@:", currentAppVersion] closeButtonTitle:@"Close" completionBlock:^(TWSReleaseNotesView *releaseNotesView, NSString *releaseNotesText, NSError *error){
         if (error)
         {

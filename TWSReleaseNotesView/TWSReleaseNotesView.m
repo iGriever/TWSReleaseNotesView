@@ -192,7 +192,7 @@ static const NSTimeInterval kTWSReleaseNotesViewTransitionDuration = 0.2f;
 {
     // Read stored version string and current version string
     NSString *previousAppVersion = [[NSUserDefaults standardUserDefaults] stringForKey:kTWSReleaseNotesViewVersionKey];
-    NSString *currentAppVersion = [[NSBundle mainBundle] infoDictionary][@"CFBundleVersion"];
+    NSString *currentAppVersion = [[NSBundle mainBundle] infoDictionary][@"CFBundleShortVersionString"];
  
     // Flag app as updated if a previous version string is found and it does not match with the current version string
     BOOL isUpdated = (previousAppVersion && ![previousAppVersion isEqualToString:currentAppVersion]) ? YES : NO;
@@ -475,7 +475,7 @@ static const NSTimeInterval kTWSReleaseNotesViewTransitionDuration = 0.2f;
 + (void)storeCurrentAppVersionString
 {
     // Store current app version string in the user defaults
-    NSString *currentAppVersion = [[NSBundle mainBundle] infoDictionary][@"CFBundleVersion"];
+    NSString *currentAppVersion = [[NSBundle mainBundle] infoDictionary][@"CFBundleShortVersionString"];
     [[NSUserDefaults standardUserDefaults] setObject:currentAppVersion forKey:kTWSReleaseNotesViewVersionKey];
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
