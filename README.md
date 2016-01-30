@@ -31,7 +31,7 @@ TWSReleaseNotesView is a simple way to address those issues. It comes with a str
     if (![TWSReleaseNotesView isAppOnFirstLaunch] && [TWSReleaseNotesView isAppVersionUpdated])
     {
         // Create the release notes view
-        NSString *currentAppVersion = [[NSBundle mainBundle] infoDictionary][@"CFBundleVersion"];
+        NSString *currentAppVersion = [[NSBundle mainBundle] infoDictionary][@"CFBundleShortVersionString"];
         TWSReleaseNotesView *releaseNotesView = [TWSReleaseNotesView viewWithReleaseNotesTitle:[NSString stringWithFormat:@"What's new in version %@:", currentAppVersion] text:@"• Great new feature\n• Annoying bug wiped away\n• Optimizations and other great stuff!\n• Additional performance and stability improvements" closeButtonTitle:@"Close"];
         
         // Show the release notes view
@@ -45,7 +45,7 @@ TWSReleaseNotesView is a simple way to address those issues. It comes with a str
     if ([TWSReleaseNotesView isAppVersionUpdated])
     {
         // Setup a remote release notes view
-        NSString *currentAppVersion = [[NSBundle mainBundle] infoDictionary][@"CFBundleVersion"];
+        NSString *currentAppVersion = [[NSBundle mainBundle] infoDictionary][@"CFBundleShortVersionString"];
         [TWSReleaseNotesView setupViewWithAppIdentifier:@"XXXXXXXXX" releaseNotesTitle:[NSString stringWithFormat:@"What's new in version %@:", currentAppVersion] closeButtonTitle:@"Close" completionBlock:^(TWSReleaseNotesView *releaseNotesView, NSString *releaseNotesText, NSError *error){
             if (error)
             {
