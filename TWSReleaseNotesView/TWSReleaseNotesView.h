@@ -132,4 +132,11 @@
  */
 - (void)showInView:(UIView *)containerView;
 
+/**
+ Shows the release notes view in the specified container view.
+ @param containerView The container view in which the release notes view must be shown.
+ @param releaseNotesText The release notes text.
+ */
+- (void)showInView:(UIView *)containerView releaseNotesText:(NSString *)releaseNotesText;
+
 @end

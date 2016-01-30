@@ -509,4 +509,11 @@ static const NSTimeInterval kTWSReleaseNotesViewTransitionDuration = 0.2f;
     }];
 }
 
+- (void)showInView:(UIView *)containerView releaseNotesText:(NSString *)releaseNotesText
+{
+    _releaseNotesText = [releaseNotesText copy];
+    [_textView setText:_releaseNotesText];
+    [self showInView:containerView];
+}
+
 @end
